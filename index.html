@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+   crossorigin=""></script>
+   <style>
+    #map { 
+        height: 600px;
+        background-color: #ccc;
+    }
+    .leaflet-popup-content-wrapper {
+        width: 100%;
+    }
+  </style>
+    </head>
+<body>
+
+    <!--Map Container-->
+    <div id="map">Loading...</div>
+
+     <!--User inut for selecting business-->
+      <!--submit-->
+    <form>
+        <select name="businesses" id="business-select">
+            <option value="coffee">Coffee</option>
+            <option value="hotel">Hotel</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="market">Market</option>
+        </select>
+        <button type="submit" id="business-submit">Submit</button>
+        </form>
+        </body>
+</html>
